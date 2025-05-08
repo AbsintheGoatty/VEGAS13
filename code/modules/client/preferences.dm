@@ -2059,7 +2059,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(slotlocked || !(pref_species.id == "garou"))
 						return
 
-					var/list/colors = list("black", "gray", "red", "white", "ginger", "brown")
+					var/list/colors = list("black", "grey", "blond", "white", "orange", "brown", "black spiral")
 					var/result = tgui_input_list(user, "Select fur color:", "Appearance Selection", sortList(colors))
 					if(result)
 						werewolf_color = result
