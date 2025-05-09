@@ -422,8 +422,8 @@
 			H.add_movespeed_modifier(/datum/movespeed_modifier/lupusform)
 		else
 			H.icon = 'code/modules/wod13/hispo.dmi'
-			H.pixel_w = -16
-			H.pixel_z = -16
+			H.pixel_w = 0
+			H.pixel_z = 0
 			H.melee_damage_lower = 35
 			H.melee_damage_upper = 55
 			H.hispo = TRUE

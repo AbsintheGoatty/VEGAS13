@@ -564,8 +564,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				DAWOF2.sprite_color = werewolf_color
 
 				var/obj/effect/overlay/eyes_crinos = new(DAWOF)
-				eyes_crinos.icon = 'code/modules/wod13/werewolf.dmi'
-				eyes_crinos.icon_state = "eyes"
+				eyes_crinos.icon = 'code/modules/wod13/eye_overlays.dmi'
+				eyes_crinos.icon_state = "crinos"
 				eyes_crinos.layer = ABOVE_HUD_LAYER
 				eyes_crinos.color = werewolf_eye_color
 				DAWOF.overlays |= eyes_crinos
@@ -584,8 +584,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				DAWOF.overlays |= hair_crinos
 
 				var/obj/effect/overlay/eyes_lupus = new(DAWOF2)
-				eyes_lupus.icon = 'code/modules/wod13/werewolf_lupus.dmi'
-				eyes_lupus.icon_state = "eyes"
+				eyes_lupus.icon = 'code/modules/wod13/eye_overlays.dmi'
+				eyes_lupus.icon_state = "lupus"
 				eyes_lupus.layer = ABOVE_HUD_LAYER
 				eyes_lupus.color = werewolf_eye_color
 				DAWOF2.overlays |= eyes_lupus
@@ -2059,7 +2059,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(slotlocked || !(pref_species.id == "garou"))
 						return
 
-					var/list/colors = list("black", "grey", "blond", "white", "orange", "brown", "black spiral")
+					var/list/colors = list("black", "grey", "blond", "white", "orange", "brown", "spiral")
 					var/result = tgui_input_list(user, "Select fur color:", "Appearance Selection", sortList(colors))
 					if(result)
 						werewolf_color = result

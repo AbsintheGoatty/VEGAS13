@@ -1,6 +1,6 @@
 /mob/living/carbon/werewolf/lupus
 	name = "wolf"
-	icon_state = "black"
+	icon_state = "default"
 	icon = 'code/modules/wod13/werewolf_lupus.dmi'
 	pass_flags = PASSTABLE
 	mob_size = MOB_SIZE_SMALL

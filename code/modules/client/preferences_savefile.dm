@@ -547,7 +547,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	breed			= sanitize_inlist(breed, list("Homid", "Lupus", "Metis"))
 	tribe			= sanitize_inlist(tribe, list("Wendigo", "Glasswalkers", "Black Spiral Dancers"))
-	werewolf_color	= sanitize_inlist(werewolf_color, list("black", "grey", "blond", "white", "orange", "brown", "black spiral"))
+	werewolf_color	= sanitize_inlist(werewolf_color, list("black", "grey", "blond", "white", "orange", "brown", "spiral"))
 	werewolf_scar	= sanitize_integer(werewolf_scar, 0, 7, initial(werewolf_scar))
 	werewolf_hair	= sanitize_integer(werewolf_hair, 0, 4, initial(werewolf_hair))
 	werewolf_hair_color		= sanitize_ooccolor(werewolf_hair_color, 3, 0)
