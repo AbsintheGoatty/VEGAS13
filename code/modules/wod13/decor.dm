@@ -1582,3 +1582,21 @@
 			burying = FALSE
 		else
 			burying = FALSE
+
+/obj/structure/mojave_grass_1
+	name = "grass"
+	desc = "Commonly found grass in the Mojave."
+	icon = 'code/modules/wod13/vegas_vegetation.dmi'
+	icon_state = "grass4"
+
+/obj/structure/mojave_grass_2
+	name = "grass"
+	desc = "Commonly found grass in the Mojave."
+	icon = 'code/modules/wod13/vegas_vegetation.dmi'
+	icon_state = "grass5"
+
+/obj/structure/mojave_grass_3
+	name = "grass"
+	desc = "Commonly found grass in the Mojave."
+	icon = 'code/modules/wod13/vegas_vegetation.dmi'
+	icon_state = "grass6"

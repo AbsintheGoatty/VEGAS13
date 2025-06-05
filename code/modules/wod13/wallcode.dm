@@ -1112,9 +1112,22 @@
 					user.visible_message("<span class='warning'>[user] digs a hole in [src].</span>", "<span class='warning'>You dig a hole in [src].</span>")
 					new /obj/structure/bury_pit(src)
 
-/turf/open/floor/plating/vampbeach/Initialize()
+/turf/open/floor/plating/desert
+	gender = PLURAL
+	name = "desert"
+	icon = 'code/modules/wod13/tiles.dmi'
+	icon_state = "desert1"
+	flags_1 = NONE
+	attachment_holes = FALSE
+	bullet_bounce_sound = null
+	footstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_SAND
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+
+/turf/open/floor/plating/desert/Initialize()
 	..()
-	icon_state = "sand[rand(1, 4)]"
+	icon_state = "desert[rand(1, 5)]"
 	set_light(1, 0.5, "#a4b7ff")
 	if(GLOB.winter)
 		if(istype(get_area(src), /area/vtm))
@@ -1297,3 +1310,5 @@
 	barefootstep = FOOTSTEP_TROTUAR
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+
+
